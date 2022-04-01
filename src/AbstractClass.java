@@ -1,8 +1,8 @@
 abstract class Shape {
     String color;
 
-    abstract double area();
 
+    abstract double area();
     public abstract String toString();
 
     public Shape(String color) {
@@ -25,7 +25,7 @@ class Circle extends Shape{
         return Math.PI*Math.pow(radius,2);
     }
     public String toString(){
-        return "Color of the circle is " + super.color+ " and area is :" + area();
+        return "Color of the circle is " + super.getColor()+ " and area is :" + area();
     }
 }
 class Rectangle extends Shape{
@@ -41,15 +41,15 @@ class Rectangle extends Shape{
         return length*breadth;
     }
     public String toString(){
-        return "Your color is "+ super.color + " and your area is: " + area();
+        return "Your color is "+ super.getColor() + " and your area is: " + area();
     }
 }
 public class AbstractClass {
     public static void main(String[] args) {
     Shape kk = new Circle("Red ",23.43);
     Shape kn = new Rectangle("Blue", 23,234);
-        System.out.println(kk.toString());
-        System.out.println( kn.toString());
+        System.out.println(kk);
+        System.out.println( kn);
     }
 
 }
