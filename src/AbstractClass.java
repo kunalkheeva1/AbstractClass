@@ -27,8 +27,24 @@ class Circle extends Shape{
     public String toString(){
         return "Color of the circle is " + super.color+ " and area is :" + area();
     }
-
 }
+class Rectangle extends Shape{
+    double length;
+    double breadth;
+    public Rectangle(String color, double length, double breadth){
+        super(color);
+        this.breadth= breadth;
+        this.length= length;
+        System.out.println("Square one is called");
+    }
+    double area(){
+        return length*breadth;
+    }
+    public String toString(){
+        return "Your color is "+ super.color + " and your area is: " + area();
+    }
+}
+
 
 
 
