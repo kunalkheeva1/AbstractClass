@@ -35,7 +35,7 @@ class Rectangle extends Shape{
         super(color);
         this.breadth= breadth;
         this.length= length;
-        System.out.println("Square one is called");
+        System.out.println("Rectangle one is called");
     }
     double area(){
         return length*breadth;
@@ -44,19 +44,12 @@ class Rectangle extends Shape{
         return "Your color is "+ super.color + " and your area is: " + area();
     }
 }
-
-
-
-
-
-
-
-
-
-
 public class AbstractClass {
     public static void main(String[] args) {
-
+    Shape kk = new Circle("Red ",23.43);
+    Shape kn = new Rectangle("Blue", 23,234);
+        System.out.println(kk.toString());
+        System.out.println( kn.toString());
     }
 
 }
