@@ -19,6 +19,7 @@ class Circle extends Shape{
     public Circle(String color, double radius){
         super(color);
         System.out.println("Circle one is called");
+
         this.radius= radius;
     }
     double area(){
